@@ -36,6 +36,9 @@ app.get('/', (req, res)=>{
     const params = {}
     res.status(200).render('home.pug', params);
 })
+server.get('*', (req, res) => {
+    return handle(req, res)
+})
 server.listen(port, ()=>{
     console.log(`The application started successfully on http://localhost:${port}`);
 })

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay's CoolChat App</title>
+    <link rel="shortcut icon" type="image/png" href="./static/1.png">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/f6a5369996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="chatbox">
+        <section>
+            <h1><i class="fab fa-atlassian"></i>CoolChat</h1>
+            <button class="theme" onclick="change()"><i class="far fa-image"></i></button>
+        </section>
+        <div class="container" id="chat">
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="messageInp" autocomplete="off" id="messageInp" placeholder="Type a message" required>
+                <button class="btn" type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <script defer src="./static/client.js"></script>
+</body>
+</html>

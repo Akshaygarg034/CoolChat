@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.chatbox{
+    width: 70%;
+    margin: 0px auto;
+}
+section{
+    background: #3a3d3e;
+    height: 97px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 19px;
+}
+body{
+    height: 100vh;
+    background: url('./bg.jpg') center center no-repeat;
+    background-size: 100%;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.theme{
+    background: none;
+    font-size: 38px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height:fit-content;
+    margin:auto 0px;
+}
+.theme:hover{
+    color: #cac6c6;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background: url("./e.jpg") center center no-repeat;
+    background-size: 75%;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message{
+    display: flex;
+    justify-content:space-between;
+    min-width: 18%;
+    max-width:70vw;
+    padding: 10px;
+    margin: 17px -10px;
+    border-radius: 10px;
+}
+.left{
+    float: left;
+    clear:both;
+    background: #fff9f9f7;
+    color: #000000eb;
+    box-shadow: #8080808c 0.5px 1.5px 0.5px 0.5px;
+}
+
+.right{
+    float: right;
+    clear: both;
+    background: #3a3d3e;
+    color: white;
+    box-shadow: rgb(8 8 8 / 9%) 1px 1px 0.5px 0.5px;
+}
+.center{
+    text-align: center;
+    clear: both;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    background: #cfe4ed;
+    color: #525151;
+    box-shadow: #8080808c 0.5px 1.5px 0.5px 0.5px;
+}
+
+#send-container{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: #8080808c 0.5px 1.5px 0.5px 0.5px;
+}
+#messageInp {
+    width: 92%;
+    border-radius: 6px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+#messageInp::placeholder{
+    margin-left: 10px;
+}
+.btn{
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 25px;
+    color: #3a3d3e;
+    border: none;
+    outline: none;
+    background: white;
+}
+.btn:hover{
+    color: #8f9497;
+}
+.fab{
+    margin-right: 15px;
+}
+.time{
+    font-size:smaller;
+    float:right;
+    text-align:right;
+    width: 75px;
+    height:fit-content;
+    margin-top:4%;
+    color:#919191;
+}
+@media only screen and (min-width:600px) and (max-width:1178px){
+    body{
+        background-size: 220%;
+    }
+      .container{
+        background-size:200%;
+    }
+}
+
+@media only screen and (max-width:599px){
+    body{
+        background-size: 450%;
+    }
+    .container{
+        padding:0px;
+        background-size:280%;
+        height:71vh;
+    }
+    .chatbox{
+        height:100vh;
+        width:100vw;
+    }
+    .message{
+        font-size: 15px;
+        min-width: 21vw;
+        max-width:70vw;
+        margin: 17px 10px;
+    }
+    .center{
+        margin:10px auto;
+    }
+}
+@media only screen and (min-width:671px) and (max-width:1000px){
+ #messageInp {
+     width:88%;
+ }
+}
+@media only screen and (min-width:442px) and (max-width:670px){
+   #messageInp {
+     width:83%;
+ }
+}
+@media only screen and (max-width:441px){
+   #messageInp {
+     width:75%;
+ }
+     h1{
+        font-size:21px;
+    }
+    .theme{
+        font-size:26px;
+    }
+}

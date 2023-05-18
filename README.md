@@ -1,4 +1,4 @@
-<h1>CoolChat</h1>
+<h1>CoolChat</h1> 
 A Chatting website through which you can chat with your friends or others. It Uses Socket IO and Express for handling connections and Backend respectively. The Frontend part is handled using Pug.
 
 In the project directory, you can run:

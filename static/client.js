@@ -1,4 +1,6 @@
-const socket = io('https://akshay-cool-chat.vercel.app');
+const socket = io('https://akshay-cool-chat.vercel.app', {
+    transports: ['websocket', 'polling']
+  });
 
 // Get DOM elements in respective Js variables
 const form = document.getElementById('send-container');

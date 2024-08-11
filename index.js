@@ -7,7 +7,7 @@ const io = require('socket.io')(server);
 const port = process.env.PORT || 3000;
 const users = {};
 console.log("Server Online");
-app.use('/static', express.static('static'));
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
  // Set the template engine as pug
 app.set('view engine', 'pug')

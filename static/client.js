@@ -1,4 +1,4 @@
-const socket = io('/');
+const socket = io('https://akshay-cool-chat.vercel.app');
 
 // Get DOM elements in respective Js variables
 const form = document.getElementById('send-container');

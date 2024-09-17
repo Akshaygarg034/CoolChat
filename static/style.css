@@ -15,7 +15,7 @@ section{
     padding: 0px 19px;
 }
 body{
-    height: 100vh;
+    height: 100dvh;
     background: url('./bg.jpg') center center no-repeat;
     background-size: 100%;
 }
